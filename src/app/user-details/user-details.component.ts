@@ -22,14 +22,18 @@ export class UserDetailsComponent implements OnInit {
       (params)=>{
         this.userService.getUserById(+params['id']).subscribe(
           (user)=>{
-            this.user = user;
-        console.log(this.user)
-
-          }
-        );
-
+            this.user = user;   });
       }
     )
   }
+
+
+  createUser()
+  {
+    this.userService.createUser()
+  }
+deleteUser(){}
+updateUser(){}
+getUsersPosts(){}
 
 }
