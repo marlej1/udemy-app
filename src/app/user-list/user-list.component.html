@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <tr>
+            <th>Imie</th>
+            <th>WWW</th>
+            <th>Firma</th>
+
+        </tr>
+    </thead>
+    <tr *ngFor="let user of users">
+        <td> <a  routerLink="./{{user.id}}">{{user.name}}</a> </td>
+        <td>{{user.website}}</td>
+        <td>{{user.company.name}}</td>
+    </tr>
+</table>
+
+<router-outlet></router-outlet>
