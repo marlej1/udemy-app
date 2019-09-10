@@ -1,0 +1,20 @@
+<button (click)="visible = !visible"> Toggle visibilty</button>
+
+<ul *ngIf="visible">
+  <li *ngFor="let name of names;let c = index">
+    Index: {{c}} ; Imię: {{name}}
+  </li>
+</ul>
+
+
+<input type="text" [(ngModel)]="switchText">
+
+<div>
+  <div>Marcib</div>
+  <div>Ania</div>
+  <div>Ala</div>
+  <div>Hesia</div>
+
+</div>
+
+{{switchText}}

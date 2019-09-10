@@ -30,10 +30,23 @@ export class UserDetailsComponent implements OnInit {
 
   createUser()
   {
-    this.userService.createUser()
+    
   }
 deleteUser(){}
 updateUser(){}
-getUsersPosts(){}
 
+
+getUsersPosts(){
+  this.userService.getUsersPosts(this.user.id).subscribe(
+    (res) =>{
+      console.log(res);
+    },
+    err=>{
+      console.log(err);
+    }
+  )
+    }
+  
 }
+
+

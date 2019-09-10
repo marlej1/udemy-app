@@ -1,12 +1,12 @@
 <p>user-details works!</p>
 
 <ol>
-   <li>{{user.id}}</li> 
-   <li>{{user.name}}</li> 
-   <li>{{user.company.name}}</li> 
-   <li>{{user.phone}}</li> 
-   <li>{{user.website}}</li> 
-   <li>{{user.address.street}}</li> 
+   <li>{{user?.id}}</li> 
+   <li>{{user?.name}}</li> 
+   <li>{{user?.company.name}}</li> 
+   <li>{{user?.phone}}</li> 
+   <li>{{user?.website}}</li> 
+   <li>{{user?.address.street}}</li> 
 </ol>
 
 <button (click)="createUser()">Create User</button>
